@@ -1,0 +1,348 @@
+#particles.js{
+  position: relative;
+}
+body{
+  text-align: center;
+  color: white;
+  font-family: 'roboto', sans-serif;
+}
+
+.wrapper{
+  background-image: url(asset/img/numerique.jpg);
+  background-size: cover;
+  height: 100vh;
+}
+.wrapper h1{
+  font-weight: bold;
+  font-size: 5em;
+  text-shadow: 0.2em 0.2em 0.3em black;
+  padding-top: %;
+  margin-left: 25%;
+  position: absolute;
+  opacity: 0.8;
+}
+.wrapper p{
+  color: black;
+  font-size: 2.5em;
+  position: absolute;
+  margin-left: 47%;
+  margin-top: 39%;
+  color: white;
+  opacity: 0.8;
+  border: 2px white solid;
+  border-radius: 15px 15px 15px 15px;
+  padding: 8px;
+  line-height: 16px;
+  padding-bottom: 16px;
+}
+.wrapper a{
+  text-decoration: none;
+  color: white;
+
+}
+//h1:hover{
+  font-size: 6em;
+  transition-duration: 1S;
+}
+#click{
+  font-size: 0.5em;
+}
+
+#presentation{
+  height: 900px;
+  width: 100%;
+  color: black;
+  margin-bottom: 40px;
+}
+#presentation h2{
+  padding-top: 30px;
+  color: grey;
+  font-size: 3em;
+  font-weight: lighter;
+}
+.pres_gauche{
+  width: 49%;
+  height: 800px;
+  float: left;
+  margin-left: 5%;
+}
+.pres_gauche h3{
+  font-size: 2em;
+  font-weight: lighter;
+  float: left;
+  margin-left: 30px;
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+}
+.pres_gauche p{
+  float: left;
+  line-height: 28px;
+  font-weight: 300;
+  font-size: 14px;
+  color: grey;
+  padding-bottom: 10px;
+}
+.pres_droite{
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 9%;
+  border: 2px solid lightgrey;
+}
+.reseaux{
+  float: left;
+}
+.reseaux ul{
+  list-style: none;
+}
+.reseaux li{
+  display: inline;
+}
+.photo{
+  height: 480px;
+  border: 1px solid black;
+  background-image: url(asset/img/cochon.jpg);
+  background-size: cover;
+}
+.info ul{
+list-style: none;
+padding-left: 0px;
+}
+.info li{
+  text-align: left;
+  border: 1px solid lightgrey;
+  padding: 12px;
+}
+.reseaux li{
+  padding-left: 80px;
+  color: grey;
+  font-size: 1.5em;
+}
+.fa{
+  font-size: 3em;
+  color: black;
+}
+#presentation2{
+  color: black;
+  text-align: center;
+  height: 550px;
+  width: 100%;
+  color:black;
+  background: linear-gradient(#1A1E23, #08073a);
+  background-size: cover;
+  }
+.progbar {
+    height: 10px;  /* Hauteur de la barre */
+    position: relative;
+    background: #3A4149;
+    border: 1px solid;
+    -moz-border-radius: 25px;
+    -webkit-border-radius: 25px;
+    border-radius: 25px;
+    box-shadow: inset 0 -1px 1px #ffffff;
+    margin-top: 8px;
+}
+.progbar > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  background-color: #6cf7c4;
+  background-image: linear-gradient(
+    center bottom,
+    rgb(43,194,83) 37%,
+    rgb(84,240,84) 69%
+  );
+  box-shadow:
+  inset 0 2px 9px  rgba(255,255,255,0.3),
+  inset 0 -2px 6px rgba(0,0,0,0.4);
+  position: relative;
+  overflow: hidden;
+}
+.competences h2{
+  text-align: center;
+  padding-top: 20px;
+  font-size: 43px;
+  line-height: 50px;
+  color: white;
+  font-weight: lighter;
+  position: relative;
+}
+.cont_left ul{
+  list-style: none;
+}
+.cont_right ul{
+  list-style: none;
+}
+.cont_left li{
+  margin: 30px;
+  color: white;
+}
+.cont_right li{
+  margin: 30px;
+  color: white
+}
+.cont_left{
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 25%;
+}
+.cont_right{
+  width: 20%;
+  height: auto;
+  float: left;
+  margin-left: 10%;
+}
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
+.timelineCv{
+  padding:0;
+  margin:0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.timeline{
+  position:relative;
+  margin:50px auto;
+  padding:40px 0;
+  width:1000px;
+  box-sizing:border-box;
+}
+.timeline:before{
+  content:'';
+  position:absolute;
+  left:50%;
+  width:2px;
+  height:100%;
+  background:#c5c5c5;
+}
+.timeline ul{
+  padding:0;
+  margin:0;
+}
+.timeline ul li{
+  list-style:none;
+  position:relative;
+  width:50%;
+  padding:20px 40px;
+  box-sizing:border-box;
+}
+.timeline ul li:nth-child(odd){
+  float:left;
+  text-align:right;
+  clear:both;
+}
+.timeline ul li:nth-child(even){
+  float:right;
+  text-align:left;
+  clear:both;
+}
+.content{
+  padding-bottom:20px;
+}
+.timeline ul li:nth-child(odd):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  right:-6px;
+  background:black;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #1917a8;
+}
+.timeline ul li:nth-child(even):before
+{
+  content:'';
+  position:absolute;
+  width:10px;
+  height:10px;
+  top:24px;
+  left:-4px;
+  background:black;
+  border-radius:50%;
+  box-shadow:0 0 0 3px #1917a8;
+}
+.timeline ul li h3{
+  padding:0;
+  margin:0;
+  color:#1917A8;
+  font-weight:600;
+}
+.timeline ul li p{
+  margin:10px 0 0;
+  padding:0;
+  color: grey;
+}
+.timeline ul li .time h4{
+  margin:0;
+  padding:0;
+  font-size:14px;
+}
+.timeline ul li:nth-child(odd) .time
+{
+  position:absolute;
+  top:12px;
+  right:-185px;
+  margin:0;
+  padding:8px 16px;
+  background:#1917A8;
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+}
+.timeline ul li:nth-child(even) .time
+{
+  position:absolute;
+  top:12px;
+  left:-165px;
+  margin:0;
+  padding:8px 16px;
+  background:#1917A8;
+  color:#fff;
+  border-radius:18px;
+  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+}
+@media(max-width:1000px)
+{
+  .timeline{
+    width:100%;
+  }
+}
+@media(max-width:767px){
+  .timeline{
+    width:100%;
+    padding-bottom:0;
+  }
+  h1{
+    font-size:40px;
+    text-align:center;
+  }
+  .timeline:before{
+    left:20px;
+    height:100%;
+  }
+  .timeline ul li:nth-child(odd),
+  .timeline ul li:nth-child(even)
+  {
+    width:100%;
+    text-align:left;
+    padding-left:50px;
+    padding-bottom:50px;
+  }
+  .timeline ul li:nth-child(odd):before,
+  .timeline ul li:nth-child(even):before
+  {
+    top:-18px;
+    left:16px;
+  }
+  .timeline ul li:nth-child(odd) .time,
+  .timeline ul li:nth-child(even) .time{
+    top:-30px;
+    left:50px;
+    right:inherit;
+  }
+}

@@ -17,13 +17,12 @@ body{
   font-size: 5em;
   text-shadow: 0.2em 0.2em 0.3em black;
   padding-top: %;
-  margin-left: 25%;
-  position: absolute;
   opacity: 0.8;
+  animation-duration: 4s;
 }
-.wrapper p{
+.wrapper #click{
   color: black;
-  font-size: 2.5em;
+  font-size: 1.5em;
   position: absolute;
   margin-left: 47%;
   margin-top: 39%;
@@ -31,67 +30,38 @@ body{
   opacity: 0.8;
   border: 2px white solid;
   border-radius: 15px 15px 15px 15px;
-  padding: 8px;
-  line-height: 16px;
+  padding: 10px;
+  line-height: 25px;
   padding-bottom: 16px;
 }
 .wrapper a{
   text-decoration: none;
   color: white;
-
 }
 //h1:hover{
   font-size: 6em;
   transition-duration: 1S;
 }
-#click{
-  font-size: 0.5em;
-}
-
 #presentation{
-  height: 900px;
-  width: 100%;
   color: black;
-  margin-bottom: 40px;
 }
 #presentation h2{
-  padding-top: 30px;
-  color: grey;
-  font-size: 3em;
-  font-weight: lighter;
-}
-.pres_gauche{
-  width: 49%;
-  height: 800px;
-  float: left;
-  margin-left: 5%;
-}
-.pres_gauche h3{
-  font-size: 2em;
-  font-weight: lighter;
-  float: left;
-  margin-left: 30px;
-  font-family: 'Montserrat';
-  text-transform: uppercase;
+  text-align: center;
 }
 .pres_gauche p{
-  float: left;
-  line-height: 28px;
-  font-weight: 300;
-  font-size: 14px;
+  margin: 55px;
   color: grey;
-  padding-bottom: 10px;
 }
-.pres_droite{
-  width: 20%;
-  height: auto;
-  float: left;
-  margin-left: 9%;
-  border: 2px solid lightgrey;
+.pres_droite .photo{
+  width: 45%;
+  left: 20%;
 }
-.reseaux{
-  float: left;
+.pres_droite .info{
+  width: 45%;
+  left: 20%;
 }
+
+
 .reseaux ul{
   list-style: none;
 }
@@ -106,12 +76,12 @@ body{
 }
 .info ul{
 list-style: none;
-padding-left: 0px;
+
 }
 .info li{
   text-align: left;
   border: 1px solid lightgrey;
-  padding: 12px;
+
 }
 .reseaux li{
   padding-left: 80px;
@@ -161,17 +131,30 @@ padding-left: 0px;
   position: relative;
   overflow: hidden;
 }
+.competences{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+}
 .competences h2{
-  text-align: center;
-  padding-top: 20px;
   font-size: 43px;
   line-height: 50px;
   color: white;
   font-weight: lighter;
   position: relative;
+  display: inline-block;
+}
+.competences h2:before{
+  content: '';
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  border: 2px solid transparent;
 }
 .cont_left ul{
   list-style: none;
+
+
 }
 .cont_right ul{
   list-style: none;
@@ -189,12 +172,43 @@ padding-left: 0px;
   height: auto;
   float: left;
   margin-left: 25%;
+  position: relative;
+  top: 20%;
+  animation-duration: 2s;
+  backface-visibility: hidden;
+}
+.cont_left{
+  animation: animLeft linear 1.5s;
+}
+@keyframes animLeft {
+  0%{
+    transform : translateX(-700px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 .cont_right{
   width: 20%;
   height: auto;
   float: left;
-  margin-left: 10%;
+  margin-left: 8%;
+  position: relative;
+  top: 20%;
+  animation-duration: 2s;
+  backface-visibility: hidden;
+  overflow:hidden;
+}
+.cont_right{
+  animation: animRight linear 1.5s;
+}
+@keyframes animRight {
+  0%{
+    transform : translateX(700px);
+  }
+  100%{
+    transform: translateX(0px);
+  }
 }
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600');
 .timelineCv{
@@ -228,6 +242,12 @@ padding-left: 0px;
   width:50%;
   padding:20px 40px;
   box-sizing:border-box;
+  transition-duration: 1s;
+}
+.timeline ul li:hover{
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 25px;
+
 }
 .timeline ul li:nth-child(odd){
   float:left;
@@ -275,6 +295,9 @@ padding-left: 0px;
 .timeline ul li p{
   margin:10px 0 0;
   padding:0;
+  color: grey;
+}
+.timeline ul li p:hover{
   color: grey;
 }
 .timeline ul li .time h4{

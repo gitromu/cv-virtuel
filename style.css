@@ -5,18 +5,88 @@ body{
   text-align: center;
   color: white;
   font-family: 'roboto', sans-serif;
+  margin-top: 5px;
 }
-
+.parallax{
+  height: 100%;
+  width: 99%;
+  z-index: -1;
+  background-image: url(asset/img/bgbleu.jpg);
+  position: absolute; /* put the background in position relative from parent block */
+  background-attachment: fixed; /* background doesn't moove whan page is scrolling */
+  background-position: center;
+  background-repeat: no-repeat; /* drop the mozaique effect */
+  background-size: cover; /* all the place is covered */
+}
+.container-full-width{
+  margin: 0;
+  padding: 0;
+  background-size: full-width;
+}
+.nav-link{
+  height: 50px;
+  outline: none;
+}
+.nav-link:hover{
+  transition-duration: 0.3s;
+  border-bottom: 2px white solid;
+  transform: scale(1.2);
+}
+.middle{
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+}
+.btn{
+  display: inline-block;
+  width: 90px;
+  height: 90px;
+  background: transparent;
+  margin: 10px;
+  border-radius: 30%;
+  box-shadow: 0 5px 15px -5px black;
+  color: #3498db;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid black;
+}
+.btn:hover{
+  border: none;
+  transform: scaleY(1.0);
+}
+.btn i{
+  line-height: 80px;
+  font-size: 30px;
+  transition: 0.3s linear;
+  color: black;
+}
+.btn:hover i{
+  transform: scale(1.5);
+  color: black;
+}
+.btn:before{
+  content: '';
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  background: lightblue;
+  top: 110%;
+}
+.btn:hover::before{
+  animation: aaa 0.7 1;
+  top: -10%;
+  left: -10%;
+}
 .wrapper{
-  background-image: url(asset/img/numerique.jpg);
-  background-size: cover;
-  height: 100vh;
+  background-image: url(asset/img/bg20.jpeg);
+  background-size:cover;
+  repeat: no-repeat;
+  height: 70vh;
 }
 .wrapper h1{
   font-weight: bold;
-  font-size: 5em;
+  font-size: 4em;
   text-shadow: 0.2em 0.2em 0.3em black;
-  padding-top: %;
   opacity: 0.8;
   animation-duration: 4s;
 }
@@ -24,8 +94,8 @@ body{
   color: black;
   font-size: 1.5em;
   position: absolute;
-  margin-left: 47%;
-  margin-top: 39%;
+  margin-left: 49%;
+  margin-top: 23%;
   color: white;
   opacity: 0.8;
   border: 2px white solid;
@@ -47,146 +117,35 @@ body{
 }
 #presentation h2{
   text-align: center;
+  font-size: 3rem;
+  color: grey;
 }
 .pres_gauche p{
   margin: 55px;
   color: grey;
 }
-.pres_droite .photo{
-  width: 45%;
-  left: 20%;
-}
-.pres_droite .info{
-  width: 45%;
-  left: 20%;
-}
 
-
-.reseaux ul{
-  list-style: none;
-}
-.reseaux li{
-  display: inline;
-}
-.photo{
-  height: 480px;
-  border: 1px solid black;
-  background-image: url(asset/img/cochon.jpg);
-  background-size: cover;
+.photo img{
+border: 1px solid black;
+width: 350px;
+height: 400px;
 }
 .info ul{
 list-style: none;
-
 }
-.info li{
-  text-align: left;
-  border: 1px solid lightgrey;
-
-}
-.reseaux li{
-  padding-left: 80px;
-  color: grey;
-  font-size: 1.5em;
-}
-.fa{
-  font-size: 3em;
+.progress h4{
   color: black;
 }
-#presentation2{
-  color: black;
-  text-align: center;
-  height: 550px;
-  width: 100%;
-  color:black;
-  background: linear-gradient(#1A1E23, #08073a);
-  background-size: cover;
-  }
-.progbar {
-    height: 10px;  /* Hauteur de la barre */
-    position: relative;
-    background: #3A4149;
-    border: 1px solid;
-    -moz-border-radius: 25px;
-    -webkit-border-radius: 25px;
-    border-radius: 25px;
-    box-shadow: inset 0 -1px 1px #ffffff;
-    margin-top: 8px;
-}
-.progbar > span {
-  display: block;
-  height: 100%;
-  border-top-right-radius: 6px;
-  border-bottom-right-radius: 6px;
-  border-top-left-radius: 20px;
-  border-bottom-left-radius: 20px;
-  background-color: #6cf7c4;
-  background-image: linear-gradient(
-    center bottom,
-    rgb(43,194,83) 37%,
-    rgb(84,240,84) 69%
-  );
-  box-shadow:
-  inset 0 2px 9px  rgba(255,255,255,0.3),
-  inset 0 -2px 6px rgba(0,0,0,0.4);
-  position: relative;
-  overflow: hidden;
-}
-.competences{
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-}
-.competences h2{
-  font-size: 43px;
-  line-height: 50px;
-  color: white;
-  font-weight: lighter;
-  position: relative;
-  display: inline-block;
-}
-.competences h2:before{
-  content: '';
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  border: 2px solid transparent;
-}
-.cont_left ul{
-  list-style: none;
-
-
-}
-.cont_right ul{
-  list-style: none;
-}
-.cont_left li{
-  margin: 30px;
-  color: white;
-}
-.cont_right li{
-  margin: 30px;
-  color: white
-}
-.cont_left{
-  width: 20%;
-  height: auto;
+.progress{
+  width: 70%;
   float: left;
-  margin-left: 25%;
-  position: relative;
-  top: 20%;
-  animation-duration: 2s;
-  backface-visibility: hidden;
 }
-.cont_left{
-  animation: animLeft linear 1.5s;
+.skill-title{
+  width: 25%;
+  float: left;
 }
-@keyframes animLeft {
-  0%{
-    transform : translateX(-700px);
-  }
-  100%{
-    transform: translateX(0px);
-  }
+.comp_row{
+  height: 250px;
 }
 .cont_right{
   width: 20%;
@@ -215,6 +174,7 @@ list-style: none;
   padding:0;
   margin:0;
   font-family: 'Montserrat', sans-serif;
+  background: white;
 }
 
 .timeline{
@@ -223,6 +183,7 @@ list-style: none;
   padding:40px 0;
   width:1000px;
   box-sizing:border-box;
+  background: white;
 }
 .timeline:before{
   content:'';
@@ -315,7 +276,7 @@ list-style: none;
   background:#1917A8;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px grey;
 }
 .timeline ul li:nth-child(even) .time
 {
@@ -327,7 +288,7 @@ list-style: none;
   background:#1917A8;
   color:#fff;
   border-radius:18px;
-  box-shadow:0 0 0 3px rgba(233,33,99,0.3);
+  box-shadow:0 0 0 3px grey;
 }
 @media(max-width:1000px)
 {
@@ -368,4 +329,9 @@ list-style: none;
     left:50px;
     right:inherit;
   }
+}
+.contact{
+  background: black;
+  height: 150px;
+
 }
